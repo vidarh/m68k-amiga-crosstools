@@ -1,8 +1,10 @@
-Package: m68k-amigaos-gcc
+Package: m68k-amigaos-gcc-2.95
 Priority: optional
 Section: devel
 Maintainer: Vidar Hokstad <vidar@hokstad.com>
 Architecture: i386
 Version: 2.95.3
 Depends: libc6
+Replaces: m68k-amigaos-binutils
+Replaces: m68k-amigaos-gcc-3.4.0
 Description: For M68k AmigaOS cross-compilation

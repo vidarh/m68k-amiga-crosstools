@@ -15,7 +15,8 @@ all: $(DEBS)
 $(DEBS): %.deb: control/%/control %.tar.bz2
 	rm -rf $(ROOT)/$*
 	mkdir -p $(ROOT)/$*/usr/local
-	(export PWD=`pwd` && cd $(ROOT)/$*/usr/local && tar jxf $(PWD)/$< )
+	(export PWD=`pwd` && cd $(ROOT)/$*/usr/local && tar jxf $(PWD)/$*.tar.bz2 )
+#	[ $* = m68k-amigaos-gcc-2.95.3 ] && (export PWD=`pwd` && cd $(ROOT)/$*/usr/local && cp $(ROOT)/$*/usr/local/amiga/bin/m68k-amigaos-gcc $(ROOT)/$*/usr/local/amiga/bin/m68k-amigaos-gcc-2.95.3 )
 	cp -Rap control/$* $(ROOT)/$*/DEBIAN
 	dpkg --build $(ROOT)/$*
 	rm -rf $(ROOT)/$*
