@@ -1,0 +1,8 @@
+Package: m68k-amigaos-binutils
+Priority: optional
+Section: devel
+Maintainer: Vidar Hokstad <vidar@hokstad.com>
+Architecture: i386
+Version: 2.14
+Depends: libc6
+Description: For M68k AmigaOS cross-compilation

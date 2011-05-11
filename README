@@ -1,0 +1,5 @@
+
+Simple makefile and control files to build (very) basic Debian
+package from the M68k AmigaOS cross development tools found at
+http://cross.zerohero.se/os3.html
+

@@ -1,0 +1,8 @@
+Package: m68k-amigaos-gcc
+Priority: optional
+Section: devel
+Maintainer: Vidar Hokstad <vidar@hokstad.com>
+Architecture: i386
+Version: 2.95.3
+Depends: libc6
+Description: For M68k AmigaOS cross-compilation
